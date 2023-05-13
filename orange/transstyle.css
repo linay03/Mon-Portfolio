@@ -1,0 +1,285 @@
+body {
+    background-image: url(img/homebg.jpg);
+    background-size: cover;
+    background-color: beige;
+    color: black;
+    text-align: justify;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+* {
+    margin: 0%;
+    list-style: none;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(41, 41, 41);
+
+}
+
+header nav ul li {
+    border-radius: 0.5em;
+    padding: 0;
+}
+
+header nav ul li a {
+    padding: 2em;
+    display: block;
+    padding-right: 3em;
+    padding-left: 3em;
+}
+
+.actif a {
+    color: #FF8C00;
+}
+
+.actif:hover a {
+    color: white;
+    transition-duration: 1s;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+header nav ul li:hover {
+    transition-duration: 1s;
+    background-color: #FF8C00;
+}
+
+
+.logo {
+    width: 150px;
+}
+
+header nav ul li:first-child {
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+header nav ul li:first-child a {
+    margin: 0 2em;
+    padding: 0;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    padding-top: 6em;
+    align-items: flex-end;
+    
+}
+aside{
+    display: flex;
+    flex-direction: column;
+    float: left;
+    top: 9em;
+    position: fixed;
+    background-color: gray;
+    border-radius: 6px;
+    margin-left: 10px;
+    width: 16%;
+    min-width: 130px;
+    overflow-wrap: break-word;
+}
+aside ul li{
+    padding: 5px;
+    margin: 5px;
+}
+aside ul li a:hover{
+    transition: 0.5s;
+    color: aquamarine;
+    text-decoration: underline;
+}
+article p{
+    font-weight: bolder;
+}
+
+div{
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    background-color: rgb(50, 53, 53);
+    min-height: 5em;
+    max-height: fit-content;
+    width: 70%;
+    border-radius: 18px;
+}
+.iceberg{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#w,#x,#y,#z{
+    margin: auto;
+    display: block;
+    width: 24%;
+    height: auto;
+    width: 23%;
+}
+#a{
+    width: 100%;
+}
+#b,#c,#d{
+    width: 28%;
+}
+div div{
+    background-color: rgb(71, 77, 75);
+}
+
+h2{
+    width: 100%;
+    margin: 20px;
+    color: whitesmoke;
+}
+
+#new1, .iceberg {
+    min-width: 650px;
+}
+
+#new1 h2 {
+    padding-left: 40px;
+}
+
+#new1 h3 {
+    color: rgb(200, 204, 207);
+}
+aside h2 {
+    color: black;
+}
+
+#new1{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+#new1 img{
+    width: 600px;
+    height: auto;
+    border-radius: 15px;
+}
+
+footer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: aliceblue;
+    padding: 3em;
+    justify-content: space-evenly;
+    background-color: rgb(196, 197, 198);
+}
+footer ul li a:hover{
+    transition-duration: 1s;
+    color: blue;
+    text-decoration: underline;
+}
+footer ul li{
+    padding-left: 1em;
+}
+
+#x ul, #w ul, #y ul, #z ul {
+    display: flex;
+    flex-direction: column;
+}
+
+#w, #x, #y, #z {
+    max-height: 200px;
+    min-height: 150px;
+}
+
+/***** Couleurs ******/
+
+#w {
+    background-color: rgb(179, 114, 84);
+    margin-left: 30px;
+    
+}
+
+#x {
+    background-color: #FF8C00;
+
+}
+
+#y {
+    background-color: #d3b58e;
+}
+
+
+#z {
+    background-color: #b49043;
+    margin-right: 30px;
+
+}
+
+#x ul li:first-child, #w ul li:first-child, #y ul li:first-child, #z ul li:first-child{
+    font-weight: bold;
+    font-size: 28px;
+}
+
+#a{
+    background-color: #e9c279;
+    margin: 15px 30px;
+
+}
+
+#a p {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#b{
+    background-color: #b47a43;
+}
+
+#c {
+    background-color: #f8ad0a;
+}
+
+#d {
+    background-color: rgb(146, 111, 45);
+}
+
+
+h3 {
+    margin: 15px;
+}
+
+p {
+    margin: 10px;
+}
+
+
+#new1 li {
+    list-style: disc;
+    margin-bottom: 5px;
+}
+
+#new0 > div {
+    border-radius: 0;
+}
+
+#new1 > div {
+    background-color: rgb(50, 53, 53);;
+}
+.divRe {
+    display: flex;
+    gap: 40px;
+}
+
+.divRe > div {
+    border: solid black 1px;
+
+}

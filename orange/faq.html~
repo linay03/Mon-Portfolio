@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+  <html lang="fr">
+    <head>
+      <meta charset="UTF-8">
+      <title>Orange Business Service</title>
+      <link rel="stylesheet" href="faqstyle.css"> <!-- Feuille de style principale -->
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li>  <a href="home.html"> <img class=logo src="./img/Orange_Business_Services_logo.png" alt="OrangeLogo"></a></li>
+                    <li><a href="home.html">Accueil</a> </li>
+                    <li><a href="présentation de l'entreprise.html">Présentation de l'Entreprise</a></li>
+                    <li><a href="transition numérique.html">Transition Numérique</a></li>
+                    <li class="actif" ><a href="#">F.A.Q.</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="faq">
+                <h1>Questions FAQ</h1>
+                <ul>
+                    <li>
+                        <p class="question">
+                            Pourquoi choisir Orange Business Service ?
+                        </p>
+                        <p class="reponse">
+                            Malgré la concurrence, nous nous démarquons par notre double expertise : nous sommes à la fois opérateurs
+                            de réseaux et intégrateur de solutions digitales. En tant qu’opérateur, nous construisons et exploitons
+                            des infrastructures complexes et en tant qu’intégrateur, nous conçoivons et manageons des solutions
+                            digitales de bout-en-bout.
+                        </p>
+                    </li>
+                    <li>
+                        <p class="question">
+                            Quels sont vos principaux concurrents ?
+                        </p>
+                        <p class="reponse">
+                            Les principaux concurrents de notre entreprise sont SFR Business, FREE, Verizon, AT&T, IBM ou encore CapGemini.
+                        </p>
+                    </li>
+                    <li>
+                        <p class="question">
+                            Q'en est-il de votre impact environnemental ?
+                        </p>
+                        <p class="reponse">
+                            Nous agissons pour améliorer le numérique durablement et menons tous nos efforts pour réduire au maximum
+                            nos émissions de CO2. Nous avons notamment lancé en 2020 le <a href="transition numérique.html">programme Green Act</a>,
+                            un programme qui a pour but d'intégrer les enjeux envirronementaux dans nos processus.
+                        </p>
+                    </li>
+                    <li>
+                        <p class="question">
+                            Proposez-vous des formations pour des étudiants ou professionnels ?
+                        </p>
+                        <p class="reponse">
+                            Oui, nous possédons des campus ouverts aux étudiants comme aux profesionnels. Ces campus sont orienté sur les
+                            expertises numériques : data & IA, cybersécurité, management, et soft skills. Nous possédons aussi une école
+                            dédiée aux nouveux métiers d'Ingénieur en Data et Spécialiste de Data ansi qu'un programme qui combinne un
+                            poste en CDI avec un cursus diplômant bac+5.
+                        </p>
+                    </li>
+                    <li></li>
+                </ul>
+            </div>
+            <div>
+                <form method="post" action="traitement.php">
+                    <h1>Nous contacter</h1>
+                    <div>
+                      <label for="societe">Nom de votre société :</label>
+                      <input id="societe" type="text" name="societe" placeholder="votre nom de société" required>
+                    </div>
+
+                    <div>
+                      <label for="civilite">Civilité :</label>
+                      <select id="civilite" name="civilite">
+                          <option value="homme">homme</option>
+                          <option value="femme">femme</option>
+                      </select>
+                    </div>
+
+                    <div>
+                        <label for="nom">Nom :</label>
+                        <input id="nom" type="text" name="nom" placeholder="votre nom" required>
+                      </div>
+                    
+                    <div>
+                        <label for="prenom">Prénom :</label>
+                        <input id="prenom" type="text" name="prenom" placeholder="votre prénom" required>
+                      </div>
+              
+
+                    <div>
+                        <label for="tel">Téléphone :</label>
+                        <input type="tel" id="phone" name="phone"
+                        pattern="[0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2}" placeholder="XX XX XX XX XX">
+                    </div>
+                    
+                    <div>
+                      <label for="email">E-mail :</label>
+                      <input id="email" type="email" name="email" placeholder="votre adresse mail" required>
+                    </div>
+              
+                    <div>
+                      <label for="message">Message :</label>
+                      <textarea id="message" name="message" rows="2" required></textarea>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="verif" name="verif" required>
+                        <label for="verif">J'atteste de l'exactitude des informations.</label>
+                    </div>
+
+                    <p>
+                      <input type="submit" value="Envoyez">
+                    </p>
+              
+                  </form>
+            </div>
+        </main>
+        <footer>
+            <nav>
+              <ul>
+                <li><a href="https://www.orange-business.com/fr" target="blank">Orange Business Services</a></li>
+                <li><a href="https://fr.wikipedia.org/wiki/Orange_Business_Services" target="blank">Wikipédia</a></li>
+                <li><a href="https://www.communiti.corsica/organisations/orange-business-services" target="blank">Community Jobs</a></li>
+                <li><a href="https://www.google.com/" target="blank">Google</a></li>
+              </ul>
+            </nav>
+          </footer>
+    </body>
+  </html>

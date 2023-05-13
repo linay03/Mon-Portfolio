@@ -1,0 +1,452 @@
+body {
+    background-image: url(img/homebg.jpg);
+    background-size: cover;
+    background-color: beige;
+    color: black;
+    text-align: justify;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+* {
+    margin: 0%;
+    list-style: none;
+}
+
+
+
+/* Header ***********************/
+/********************************/
+
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(41, 41, 41);
+
+}
+
+header nav ul li {
+    border-radius: 0.5em;
+    padding: 0;
+}
+
+header nav ul li a {
+    padding: 2em;
+    display: block;
+    padding-right: 3em;
+    padding-left: 3em;
+}
+
+.actif a {
+    color: #FF8C00;
+}
+
+.actif:hover a {
+    color: white;
+    transition-duration: 1s;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+header nav ul li:hover {
+    transition-duration: 1s;
+    background-color: #FF8C00;
+}
+
+.logo {
+    width: 150px;
+}
+
+header nav ul li:first-child {
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+header nav ul li:first-child a {
+    margin: 0 2em;
+    padding: 0;
+}
+
+main { 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 6em;
+    min-width: 800px;
+}
+aside{
+    top: 9em;
+    display: flex;
+    flex-direction: column;
+    float: left;
+    position: fixed;
+    background-color: gray;
+    border-radius: 6px;
+    margin: 15px;
+    width: 16%;
+    min-width: 130px;
+    overflow-wrap: break-word;
+}
+aside ul li{
+    padding: 5px;
+    margin: 5px;
+}
+aside ul li a:hover{
+    transition: 0.5s;
+    color: aquamarine;
+    text-decoration: underline;
+}
+
+aside h2 {
+    padding-left : 10px;
+}
+
+article p{
+    font-weight: bolder;
+}
+div{
+    background-color: rgb(99, 99, 99);
+    margin: 1em;
+    min-height: 10em;
+    max-height: fit-content;
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-radius: 20px;
+}
+
+div > div{
+    width: 400px;
+    height: 700px;
+}
+
+/**********Produits ***********/ 
+/****************************************/
+.produits li{
+    display: list-item;
+    margin: 5px;
+}
+.produits li a{
+    position: relative;
+    padding: 1em;
+    cursor: pointer;
+}
+.produits li:hover{
+    transition-duration: 0.5s;
+    background-color: black;
+}
+#container{
+    height: 300px;
+    width: 800px;
+    background-color: #FF8C00;
+    overflow-y: scroll;
+    scroll-snap-type: block mandatory;
+    display: flex;
+    flex-direction: column;
+}
+.slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: center;
+    background-color: antiquewhite;
+    max-width: 620px;
+    min-height: 300px;
+
+}
+
+#container > div img {
+ width: 360px;
+ height: 190.5px;
+
+}
+
+/******* Organisation ********************/
+/****************************************/
+.organisation {
+    display: flex;
+    flex-direction: row;
+}
+
+.vignette{
+    position: relative;
+    display: flex;
+}
+
+.organisation h2{
+    font-size: 40px;
+}
+
+
+.organisation h3{
+    font-size: 35px;
+    padding-left: 10px;
+}
+
+/******* Geographie ********/
+.imgvignette {
+    /*position: absolute;*/
+    top :0;
+    left:0;
+    width: 400px;
+    height: 302px;
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+.titregeographie {
+    position: absolute;
+    top: 350px;
+    left:0px;
+    font-size: 25px;
+
+}
+.textegeographie {
+    position: absolute;
+    top: 450px;
+    left: 0;
+    font-size: 20px;
+    padding-left: 5px;
+}
+
+main .organisation div img {
+    border-radius: 20px 20px 0 0;
+}
+
+main .stratégie div img {
+    border-radius: 20px 20px 0 20px;
+}
+
+/****** Operationel *****/
+
+
+
+.imgvignette {
+    /*position: absolute;*/
+    top :0;
+    left:0;
+}
+
+.titreoperationel {
+    position: absolute;
+    top: 350px;
+    left:0px;
+    font-size: 25px;
+
+}
+.texteoperationel {
+    position: absolute;
+    top: 450px;
+    left: 0;
+    font-size: 20px;
+    padding-left: 5px;
+}
+
+
+/**** Juridique *******/
+
+.titrejuridique {
+    position: absolute;
+    top: 350px;
+    left:0px
+}
+
+
+.textejuridique {
+    position: absolute;
+    top: 450px;
+    left: 0;
+    font-size: 20px;
+    padding-left: 5px;
+}
+
+
+.organisation div {
+    background-color: rgb(253, 214, 164);
+    /*position: relative;*/
+}
+
+
+/**********Stratégie ***********/ 
+/****************************************/
+
+
+.stratégie h2 {
+    font-size: 40px;
+}
+
+.stratégie div{
+    background-color: rgb(112, 179, 153);
+    height: 350px;
+    position: relative;
+}
+
+.newvignette {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.titrestrategie {
+    font-size: 25px;
+    top: 3px;
+    left: 2px;
+    height: 5px;
+    position:  absolute;
+    margin-bottom: 5px;
+}
+
+.textestrategie {
+    font-size: 17px;
+    top: 50px;
+    left: 2px;
+    position: absolute;
+    padding-left: 25px;
+}
+
+.deco img{
+    background-color: white;
+    width: 20px;
+    height: 310px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0.9;
+}
+
+/*****Valeurs ***************/
+/******************************/
+
+main div h2 {
+    font-size: 40px;
+}
+
+.valeurs article{
+    border: solid black 3px;
+    display: flex;
+    max-width: 70%;
+    margin-bottom: 10px;
+    min-width: 600px;
+}
+
+.valeurimg{
+    width: 400px;
+    height: 330px;
+}
+
+.valeurs p {
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+
+p {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+main div div h3 {
+    margin-left: 10px;
+}
+
+main div {
+    padding: 10px;
+}
+
+
+.partenaires div{
+    background-color: rgb(60, 63, 62);
+}
+
+main div h2{
+    width: 100%;
+    margin-left: 10px;
+    color : whitesmoke;
+}
+
+
+/*****partenaires ***************/
+/******************************/
+
+
+.partenaires ul{
+    top: 3em;
+    width: 80%;
+    padding: 0%;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: stretch;
+    align-content: center;
+    overflow-x: scroll;
+    overscroll-behavior-x: auto;
+    border: solid black 5px;
+
+}
+.partenaires li{
+    background-color: rgb(168, 168, 168);
+    margin: 1em;
+    list-style: none;
+    box-sizing: border-box;
+    border-radius: 50%;
+    object-fit:cover;
+    object-position:center;
+    transition-property: all;
+    padding: 20px;
+}
+
+.partenaires a, .partenaires img {
+    border-radius: 50%;
+}
+
+.partenaires a {
+    padding: 20px;
+    display: block;
+}
+
+.partenaires img{
+    width: 200px;
+    height: 200px;
+    object-fit:cover;
+    transition-property: all;
+    transition-duration: 1s;
+}
+.partenaires li:hover{
+    filter: brightness(70%);
+    transition: all 1s;
+}
+
+
+/***** footer*****/
+
+footer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: aliceblue;
+    padding: 3em;
+    justify-content: space-evenly;
+    background-color: rgb(196, 197, 198);
+}
+footer ul li a:hover{
+    transition-duration: 1s;
+    color: blue;
+    text-decoration: underline;
+}
+footer ul li{
+    padding-left: 1em;
+}
