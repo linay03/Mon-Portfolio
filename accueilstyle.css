@@ -1,33 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap%27');
 
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Quicksand&display=swap');
+
 /*penser à appliquer display-none sur aside */ 
+
 
 body{
     background-color: #c3c9cf;
+    background: linear-gradient(
+      to bottom,
+      rgb(235, 228, 206) 0%,
+      rgb(219, 205, 164) 35%,
+      #c3c9cf 35%,
+      #c3c9cf 100%
+    );
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0;
     font-family: 'Poppins', sans-serif;
+    position: relative;
 }
 
 
 /*HEADER *****/
 
-header {
+header nav {
   background-color: #786481;
   margin-left: 50%;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
   width: 50%;
   box-shadow: 0px 5px 5px rgb(80, 79, 79);
+  flex-wrap: wrap;
   
 }
 header nav ul {
   list-style: none;
   margin: 0;
   display: flex;
-
+  flex-wrap: wrap;
   justify-content: center;
-
+  
+ 
 }
 header nav {
     display: flex;
@@ -41,11 +56,15 @@ header a {
     text-decoration: none;
     padding: 2em;
     color: rgb(248, 204, 83);
+    text-transform: uppercase;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+
 }
 
 header a:hover {
-    background-color: #b3dbdb;
-    color: #5a1212;
+    /*background-color: #b3dbdb;
+    color: #5a1212;*/
 }
 
 
@@ -57,6 +76,44 @@ header ul, footer ul {
   color: #f1fdc2;
   background-color: #483e5f;
 }
+
+
+@media screen and (min-width: 600px) {
+    ul {
+        flex-direction: row;
+    }
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 0.10em;
+  display: inline-block;
+  padding: 2em;
+  position: relative;
+}
+
+a::after { 
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  display: block;
+  background: none repeat scroll 0 0 transparent;
+  height: 2px;
+  width: 0;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+
+a:hover::after { 
+  width: 100%; 
+  left: 0; 
+}
+
+
+
+Resour
 /********MAIN*******/
 
 main {
@@ -66,10 +123,31 @@ main {
     width: 95%;
     margin: 20px;
     min-height: 700px;
-    
+    position: relative;
   }
 
-  
+.imgWhite {
+  width: 90%;
+  display: flex;
+  gap: 110px;
+  justify-content: end;
+  flex-wrap: wrap;
+}
+
+
+  img:first-child{
+    width:350px;
+    height: 500px;
+    margin-top: 60px;
+    right: 50px;
+  }
+
+  img:nth-child(2){
+    width:350px;
+    height: 500px;
+    right: 500px;
+  }
+
   /*Aside*/
   aside {
       height: 400px;
@@ -85,6 +163,36 @@ main {
     
   }
 
+  section{
+    margin-top: 200px;
+    justify-content: center;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  
+h1{
+  font-family: 'Dosis', sans-serif;
+  color: #54485a;
+  font-size: 70px;
+  margin-left: 10%;
+  position: relative;
+ 
+    
+}
+
+h1::before {
+  content: "";
+  position: absolute;
+  top : 98%;
+  left: 370px;
+  bottom: 0px;
+  width: 750px;
+  height: 14px;
+  transform: skew(-12deg) translateX(-50%);
+  background: rgba(223, 84, 49, 0.37);
+  z-index: -1;
+}
+    
 
 
 /* FOOTER ****************/ 
@@ -106,8 +214,10 @@ footer ul {
     
   }
   
-  
   footer ul li a:hover {
     color: rgb(78, 131, 134);
     text-decoration: underline;
   }
+
+
+  
