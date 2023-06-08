@@ -1,110 +1,269 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap%27');
 
-/*penser à appliquer display-none sur aside */ 
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;400&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Quicksand&display=swap');
+ 
+@media all and (max-width: 1080px) {
+  main {
+    flex-wrap: wrap !important;
+  }
+}
 
-body{
-    background-color: #c3c9cf;
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
+@media screen and (min-width: 600px) {
+  ul {
+    flex-direction: row;
+  }
+}
+
+body {
+  background-color: #c3c9cf;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
 }
 
 
 /*HEADER *****/
-header {
+header nav {
   background-color: #786481;
   width: 100%;
   box-shadow: 0px 5px 5px rgb(80, 79, 79);
-  
+  flex-wrap: wrap;
+
 }
+
 header nav ul {
   list-style: none;
   margin: 0;
   display: flex;
-
+  flex-wrap: wrap;
   justify-content: center;
 
+
 }
+
 header nav {
-    display: flex;
-    align-content: center;
-    justify-content: space-around;
-      
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+
 }
 
 header a {
-    display: block;
-    text-decoration: none;
-    padding: 2em;
-    color: rgb(248, 204, 83);
+  display: block;
+  text-decoration: none;
+  padding: 2em;
+  color: rgb(248, 204, 83);
+  text-transform: uppercase;
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Quicksand', sans-serif;
+  text-decoration: none;
+  letter-spacing: 0.10em;
+  display: inline-block;
+  padding: 2em;
+  position: relative;
 }
 
-header a:hover {
-    background-color: #b3dbdb;
-    color: #5a1212;
-}
-
-
-header ul, footer ul {
+header ul,
+footer ul {
   list-style: none;
 }
 
-.actif  {
+.actif {
   color: #f1fdc2;
   background-color: #483e5f;
 }
 
 
+@media screen and (min-width: 600px) {
+  ul {
+    flex-direction: row;
+  }
+}
+
+header a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  display: block;
+  background: none repeat scroll 0 0 transparent;
+  height: 2px;
+  width: 0;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+
+.actif::after {
+  position: absolute;
+  display: block;
+  height: 0;
+  width: 0;
+}
+
+header a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.actif {
+  color: #f1fdc2;
+  background-color: #483e5f;
+}
+
 /********MAIN*******/
-
 main {
-    display: flex;
-    gap: 10px;
-    /*flex-wrap: wrap-reverse;*/
-    width: 95%;
-    margin: 20px;
-    min-height: 700px;
-    
-  }
+  display: flex;
+  gap: 10px;
+  /*flex-wrap: wrap-reverse;*/
+  width: 95%;
+  margin: 20px;
+  min-height: 700px;
+}
 
-  
-  /*Aside*/
-  aside {
-      height: 400px;
-      min-width: 400px;
-      max-width:400px;
-      align-items: center;
-      background-color: rgb(252, 248, 255);
-      border: thick double #221546;
-      border-radius: 15px;
-      margin: 15px;
-      display: flex;
-      flex-direction: column;
-  }
+article {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+/*Aside*/
+aside {
+  min-height: 400px;
+  max-height: 500px;
+  min-width: 400px;
+  max-width: 400px;
+  align-items: center;
+  background-color: rgb(252, 251, 248);
+  /*border: thick double #221546;
+    border-radius: 15px;*/
+  border-radius: 10px;
+  flex-wrap: wrap;
+  margin: 15px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+/***********Me connaitre ***************/
+
+
+/* === Moi === */
+
+.moi {
+  display: flex ;
+  justify-content: center;
+}
+
+.meConnaitre {
+text-align: center;
+    font-size:35px; font-weight:300; color:#222; letter-spacing:1px;
+    text-transform: uppercase;
+
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-template-rows: 27px 0;
+    grid-gap: 20px;
+    align-items: center;
+}
+
+.meConnaitre:after,.meConnaitre:before {
+    content: " ";
+    display: block;
+    border-bottom: 1px solid #34c954;
+    border-top: 1px solid #012508;
+    height: 5px;
+    background-color:#849787;
+}
+
+
+/* === HEADING STYLE #3 === */
+
+.titresMeconnaitre{
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1.5em;
+  padding-bottom: 15px;
+  position: relative;
+}
+.titresMeconnaitre:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 5px;
+  width: 55px;
+  background-color: #111;
+}
+.titresMeconnaitre:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+  height: 1px;
+  width: 95%;
+  max-width: 255px;
+  background-color: #333;
+}
+
+/* === Formations === */
+.formations{
+  margin: 0;
+}
 
 
 
-/* FOOTER ****************/ 
+/* === Compétences === */
+
+.competences{
+  margin: 0;
+}
+
+
+
+/* === Expériences === */
+.listeExperiences {
+  display: flex;
+  flex-direction: column;
+}
+
+.experiences {
+  margin-left: 15px;
+}
+
+.texteExperiences {
+  margin-left: 35px;
+  font-size: 17px;
+}
+
+p {
+  margin: 0;
+  font-size: 20px;
+}
+
+/* FOOTER ****************/
 
 footer ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    color: aliceblue;
-    padding: 3em;
-    justify-content: space-evenly;
-    background-color: rgb(219, 205, 164);
-    margin: 0;
-    height: 50px;
-  }
-  
-  footer ul li {
-    color: rgb(24, 102, 102);
-    
-  }
-  
-  
-  footer ul li a:hover {
-    color: rgb(78, 131, 134);
-    text-decoration: underline;
-  }
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: rgb(42, 55, 66);
+  padding: 3em;
+  justify-content: space-evenly;
+  background-color: rgb(219, 205, 164);
+  margin: 0;
+  height: 50px;
+}
+
+footer ul li {
+  color: rgb(24, 102, 102);
+
+}
+
+
+footer ul li a:hover {
+  color: rgb(78, 131, 134);
+  text-decoration: underline;
+}

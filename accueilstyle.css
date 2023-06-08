@@ -4,15 +4,20 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Quicksand&display=swap');
 
-/*penser à appliquer display-none sur aside */ 
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@0;1&family=Karla&family=Lato&display=swap');
 
+@media all and (max-width: 1480px) {
+  .mapresentation { left: 0; top: 0px; position: absolute; }
+  .mapresentation2 { left: 0; top: 10px; position: absolute; }
+  .imgWhite img { margin-top: 110px;}
+}
 
 body{
     background-color: #c3c9cf;
     background: linear-gradient(
       to bottom,
       rgb(235, 228, 206) 0%,
-      rgb(219, 205, 164) 35%,
+      rgb(219, 205, 164) 64%,
       #c3c9cf 35%,
       #c3c9cf 100%
     );
@@ -22,9 +27,7 @@ body{
     position: relative;
 }
 
-
 /*HEADER *****/
-
 header nav {
   background-color: #786481;
   margin-left: 50%;
@@ -61,12 +64,6 @@ header a {
     font-family: 'Quicksand', sans-serif;
 
 }
-
-header a:hover {
-    /*background-color: #b3dbdb;
-    color: #5a1212;*/
-}
-
 
 header ul, footer ul {
   list-style: none;
@@ -135,14 +132,14 @@ main {
 }
 
 
-  img:first-child{
+   img:nth-child(2){
     width:350px;
     height: 500px;
     margin-top: 60px;
     right: 50px;
   }
 
-  img:nth-child(2){
+  img:first-child{
     width:350px;
     height: 500px;
     right: 500px;
@@ -176,8 +173,6 @@ h1{
   font-size: 70px;
   margin-left: 10%;
   position: relative;
- 
-    
 }
 
 h1::before {
@@ -192,9 +187,35 @@ h1::before {
   background: rgba(223, 84, 49, 0.37);
   z-index: -1;
 }
-    
 
+.premierePartie {
+  position: relative;
+  margin-top: 90px;
+}
 
+.mapresentation{
+  font-size: 45px;
+  left: 45px;
+  margin: 0;
+  position: absolute;
+  color: #4b4b7a;
+}
+
+.mapresentation2{
+  font-size: 35px;
+  left: 55px;
+  top: 60px;
+  margin: 0;
+  color: #5c1d44;
+  position: absolute;
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Karla', sans-serif;
+  font-family: 'Lato', sans-serif;
+}
+
+.intro{
+
+}
 /* FOOTER ****************/ 
 
 footer ul {
