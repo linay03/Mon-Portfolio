@@ -20,6 +20,7 @@ body {
   background-color: #c3c9cf;
   font-family: 'Poppins', sans-serif;
   margin: 0;
+  font-size: 17px;
 }
 
 
@@ -62,6 +63,7 @@ header a {
   display: inline-block;
   padding: 2em;
   position: relative;
+  font-size: 16px;
 }
 
 header ul,
@@ -122,9 +124,13 @@ main {
 }
 
 article {
+  margin-left: 20px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  background-color: #405f581c;
+  border-radius: 10px;
+  padding-left: 15px;
 }
 
 /*Aside*/
@@ -210,9 +216,14 @@ text-align: center;
 /* === Formations === */
 .formations{
   margin: 0;
+  width: 60%;
 }
 
-
+.datesFormations{
+  font-weight: bold;
+  color: #467ec7;
+  font-size: 20px;
+}
 
 /* === Compétences === */
 
@@ -220,6 +231,10 @@ text-align: center;
   margin: 0;
 }
 
+.competences li {
+  color: #8d4a30;
+  font-weight: bold;
+}
 
 
 /* === Expériences === */
@@ -242,6 +257,45 @@ p {
   font-size: 20px;
 }
 
+/* === Centre intérêts === */
+
+.texteCentreInterets{
+  margin: 0;
+  margin-left: 10px;
+  width: 60%;
+  font-size: 17px;
+}
+
+.artwork{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px ;
+  margin: 25px 0;
+}
+
+.artwork img{
+  margin: 40px 0;
+  max-width: 1000px;
+  max-height: 400px;
+}
+
+
+.artwork2 img{
+  margin: 0;
+  max-width: 400px;
+  max-height: 400px;
+}
+
+/* Artwork*/
+
+.artwork2 {
+  display: flex;
+  flex-direction: column;
+  gap : 10px;
+  flex-wrap: wrap;
+}
+
+
 /* FOOTER ****************/
 
 footer ul {
@@ -261,7 +315,6 @@ footer ul li {
   color: rgb(24, 102, 102);
 
 }
-
 
 footer ul li a:hover {
   color: rgb(78, 131, 134);

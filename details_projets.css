@@ -13,9 +13,13 @@ body{
 
 }
 
-@media all and (max-width: 1080px) {
+
+
+
+@media all and (max-width: 1680px) {
   .asideliste { display: none !important; }
   article {margin-left: 0;}
+  .saetitre {max-height: 55px;}
 }
 
 /*HEADER *****/
@@ -142,15 +146,22 @@ section ul {
   list-style: none;
 }
 
-.accestitre::marker{
+.parsemestre::marker{
   content: "▶ ";
   color: rgb(168, 54, 73);
+}
+
+.grasTitre{
+  font-weight: bold;
+  color: #6b48e9;
+ 
 }
 
 section a {
   color: #221546;
   text-decoration: underline ;
 }
+
 
 .parsemestre{
     display: flex;
@@ -160,6 +171,7 @@ section a {
 
 .accessae{
     padding-left: 30px;
+    color: #94a19c;
     text-decoration: none ;
 }
 
@@ -208,7 +220,7 @@ gap: 60px;
     font-size: 22px;
     box-shadow: 12px 8px 2px 1px rgb(173, 139, 139);
     background-color:rgb(236, 168, 105,0.6);
-    
+    flex-wrap: wrap;
 }
 
 .saedescription{
