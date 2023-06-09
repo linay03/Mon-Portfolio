@@ -136,21 +136,24 @@ article {
 /*Aside*/
 aside {
   min-height: 400px;
-  max-height: 500px;
-  min-width: 400px;
-  max-width: 400px;
+  max-height: 600px;
+  min-width: 420px;
+  max-width: 420px;
   align-items: center;
   background-color: rgb(252, 251, 248);
-  /*border: thick double #221546;
-    border-radius: 15px;*/
   border-radius: 10px;
-  flex-wrap: wrap;
+
   margin: 15px;
   margin-top: 40px;
   display: flex;
   flex-direction: column;
 }
 
+#me{
+  width: 220.5px;
+  height: 207.5;
+ }
+ 
 /***********Me connaitre ***************/
 
 

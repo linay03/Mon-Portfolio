@@ -89,7 +89,7 @@ a {
   position: relative;
 }
 
-a::after { 
+header a::after { 
   content: "";
   position: absolute;
   bottom: 0;
@@ -102,7 +102,7 @@ a::after {
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
 }
 
-a:hover::after { 
+header a:hover::after { 
   width: 100%; 
   left: 0; 
 }
@@ -119,7 +119,7 @@ main {
     width: 95%;
     margin: 20px;
     min-height: 700px;
-    position: relative;
+
   }
 
 .imgWhite {
@@ -128,10 +128,36 @@ main {
   gap: 110px;
   justify-content: end;
   flex-wrap: wrap;
+  border-color: white;
+  
 }
 
+#white1{
+position: relative;
+}
 
-   img:nth-child(2){
+#white1{
+position: relative;
+}
+
+#white2{
+  position: relative;
+  }
+
+#me{
+  width: 250.5px;
+  height: 247.5;
+  position: absolute;
+  top: 40px;
+  left: 15%;
+}
+
+#bo{
+  width: 300px;
+  height: 400px;
+}
+
+   .imgWhite2:nth-child(2){
     width:350px;
     height: 500px;
     margin-top: 60px;
@@ -142,21 +168,6 @@ main {
     width:350px;
     height: 500px;
     right: 500px;
-  }
-
-  /*Aside*/
-  aside {
-      height: 400px;
-      min-width: 400px;
-      max-width:400px;
-      align-items: center;
-      background-color: rgb(252, 248, 255);
-      border: thick double #221546;
-      border-radius: 15px;
-      margin: 15px;
-      display: flex;
-      flex-direction: column;
-    
   }
 
   section{
@@ -189,7 +200,8 @@ h1::before {
 
 .premierePartie {
   position: relative;
-  margin-top: 90px;
+  margin: 90px 0 180px;
+
 }
 
 .mapresentation{
@@ -212,9 +224,20 @@ h1::before {
   font-family: 'Lato', sans-serif;
 }
 
-.intro{
-
+.introDiv{
+  background-color: #d7d5d8;
+  height: 70px;
+  position: absolute;
+  top: 240px;
+  left: 70px;
 }
+
+.intro{
+  top:240px;
+  left: 70px;
+  font-size: 20px;
+}
+
 /* FOOTER ****************/ 
 
 footer ul {
