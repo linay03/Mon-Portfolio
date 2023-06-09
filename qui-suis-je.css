@@ -8,6 +8,7 @@
   main {
     flex-wrap: wrap !important;
   }
+  #sae10102{height: 500px;}
 }
 
 @media screen and (min-width: 600px) {

@@ -227,6 +227,14 @@ gap: 60px;
     padding-top: 30px;
 }
 
+#sae10102{
+  max-height: 1900px;
+}
+
+#sae204{
+  max-height: 1100px;
+}
+
 .warning {
   color: #bd3f5f;
 }
