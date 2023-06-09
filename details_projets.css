@@ -10,13 +10,10 @@ body{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0;
     font-family: 'Poppins', sans-serif;
-
 }
 
 
-
-
-@media all and (max-width: 1680px) {
+@media all and (max-width: 1080px) {
   .asideliste { display: none !important; }
   article {margin-left: 0;}
   .saetitre {max-height: 55px;}
@@ -69,7 +66,6 @@ header ul, footer ul {
   color: #f1fdc2;
   background-color: #483e5f;
 }
-
 
 @media screen and (min-width: 600px) {
     ul {
@@ -171,7 +167,7 @@ section a {
 
 .accessae{
     padding-left: 30px;
-    color: #94a19c;
+    color: #5f746b;
     text-decoration: none ;
 }
 
@@ -231,6 +227,11 @@ gap: 60px;
     padding-top: 30px;
 }
 
+.warning {
+  color: #bd3f5f;
+}
+
+
 .listesae img{
     flex-basis: 250px;
     width: 380px;
@@ -256,6 +257,7 @@ gap: 60px;
 .textesae p {
   flex-wrap: wrap;
 }
+
 
 .texteimage{
     display: flex;
@@ -289,6 +291,7 @@ gap: 60px;
     margin: 5px;
 }
 
+
 .images:hover {
     transition-duration: 0.5s;
     -ms-tranform: scale(0.1);
@@ -310,6 +313,12 @@ gap: 60px;
     height: 250px;
     margin: 10px;
     
+}
+
+.schemaRel{
+    max-width: 400px;
+    height: 600px;
+    margin: 10px;
 }
 
 .photoexempleMain img:hover{
@@ -335,9 +344,7 @@ footer ul {
 
 footer ul li {
   color: rgb(24, 102, 102);
-  
 }
-
 
 footer ul li a:hover {
   color: rgb(78, 131, 134);
