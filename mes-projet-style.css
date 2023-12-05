@@ -196,7 +196,7 @@ article > p {
 .listesae img{
     flex-basis: 250px;
     width: 380px;
-    height: 250px;
+    min-height: 250px;
     border-radius: 20px;
   }
 
