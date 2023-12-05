@@ -200,6 +200,13 @@ article > p {
     border-radius: 20px;
   }
 
+#gamejamJaquette {
+  flex-basis: 250px;
+  width: 250px;
+  height: 250px;
+  border-radius: 20px;
+}
+
  .listesae figure{
     width: 400px;
     height: 275px;
